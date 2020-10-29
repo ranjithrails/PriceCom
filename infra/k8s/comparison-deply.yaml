@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: comparison-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: comparison
+  template:
+    metadata:
+      labels:
+        app: comparison
+    spec:
+      containers:
+        - name: comparison
+          image: ranjithdurai89/comparison
