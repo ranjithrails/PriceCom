@@ -22,7 +22,7 @@ app.use(cors({
 }));
 app.get('/', (req, res) => {
   axios.get('http://comparison-clusterip-srv:3002/testcompare')
-  res.send('Hello Auth!');
+  res.send('Hello Auth! PR test');
 })
 
 app.get('/auth', (req, res) => {
